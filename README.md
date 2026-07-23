@@ -4,12 +4,6 @@ Este repositório documenta três projetos práticos de infraestrutura em nuvem,
 
 Os três projetos seguem um fio narrativo único: a migração fictícia da **Sabor Caseiro**, um e-commerce de médio porte que hoje opera com um servidor físico local e precisa modernizar sua infraestrutura antes que os custos de manutenção e os riscos de indisponibilidade comprometam o negócio.
 
-## Sobre mim
-
-Estou em transição de carreira para Infraestrutura e Cloud Computing, com foco em AWS. Este repositório reúne meus primeiros projetos aplicados, construídos como parte de um processo contínuo de estudo e prática, priorizando não apenas a execução técnica, mas a documentação clara das decisões por trás de cada escolha.
-
-**Contato:** [LinkedIn](#) · [E-mail](#)
-
 ## Projetos
 
 | # | Projeto | Foco | Serviços AWS | Status |
