@@ -57,8 +57,6 @@ flowchart LR
     style VPC fill:#ffffff,stroke:#27ae60,stroke-width:1px,stroke-dasharray: 5 5
 ```
 
-> O código-fonte deste diagrama também está em [`diagrams/diagrama-migracao.mmd`](./diagrams/diagrama-migracao.mmd), pronto para colar em [mermaid.live](https://mermaid.live) caso queira ajustar o layout, exportar como PNG/SVG e adicionar como evidência. O GitHub já renderiza o bloco `mermaid` acima automaticamente, então o diagrama aparece formatado no repositório mesmo sem exportar imagem.
-
 O diagrama representa a transição do servidor físico único da Sabor Caseiro, sem redundância, para uma arquitetura com uma instância EC2 dentro de uma VPC, o bucket S3 já existente da Missão 1 para armazenamento de objetos, e as Roles IAM da Missão 2 controlando o acesso entre os serviços — eliminando o ponto único de falha que existe hoje na operação da empresa.
 
 ## Justificativa via Well-Architected Framework
