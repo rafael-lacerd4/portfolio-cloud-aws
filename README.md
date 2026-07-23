@@ -1,8 +1,8 @@
 # Portfólio Cloud — AWS
 
-Este repositório documenta três projetos práticos de infraestrutura em nuvem, construídos na minha conta pessoal AWS. O objetivo não é apenas mostrar que sei executar comandos, mas registrar **as decisões técnicas por trás de cada solução** — o problema que ela resolve, as alternativas consideradas e as dificuldades encontradas no caminho.
+Este repositório reúne três projetos práticos de infraestrutura em nuvem, desenvolvidos na minha conta pessoal da AWS. O objetivo não é apenas demonstrar a execução de serviços, mas apresentar as decisões técnicas por trás de cada solução, explicando o problema que ela resolve, as alternativas avaliadas e os desafios encontrados durante a implementação.
 
-Os três projetos seguem um fio narrativo único: a migração fictícia da **Sabor Caseiro**, um e-commerce de médio porte que hoje opera com um servidor físico local e precisa modernizar sua infraestrutura antes que os custos de manutenção e os riscos de indisponibilidade comprometam o negócio.
+Os três projetos fazem parte de um único cenário: a migração fictícia da Sabor Caseiro, um e-commerce de médio porte que atualmente opera em um servidor físico local e precisa modernizar sua infraestrutura para reduzir custos de manutenção, aumentar a disponibilidade e garantir a escalabilidade do ambiente.
 
 ## Projetos
 
