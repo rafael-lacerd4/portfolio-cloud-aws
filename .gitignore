@@ -1,0 +1,9 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Nunca versione credenciais ou chaves de acesso
+*.pem
+*.env
+credentials.csv
+access_keys.csv

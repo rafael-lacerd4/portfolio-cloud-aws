@@ -1,0 +1,34 @@
+%% Diagrama de Migração — Sabor Caseiro (On-Premise -> AWS)
+%% Cole este código em https://mermaid.live/ para visualizar e exportar como PNG/SVG
+
+flowchart LR
+    SERVIDOR["🖥️ Servidor Físico Único<br/>Catálogo + Banco de Dados<br/><i>Ponto único de falha</i>"]
+
+    subgraph AWS["☁️ AWS — Nova Arquitetura"]
+        direction TB
+        subgraph VPC["🔒 VPC"]
+            EC2["🖥️ EC2<br/>Sistema de Catálogo<br/>Multi-AZ"]
+        end
+        S3["🪣 S3<br/>Site + Arquivos Estáticos"]
+        EC2 <--> S3
+    end
+
+    subgraph GOV["🛡️ Governança & Operações"]
+        direction TB
+        IAM["IAM Roles<br/>Menor Privilégio"]
+        BUDGET["AWS Budgets<br/>Alertas de Custo"]
+        BACKUP["Backup + Monitoramento"]
+    end
+
+    SERVIDOR ==>|"Migração via<br/>AWS CAF"| AWS
+    GOV -.->|"protege e<br/>monitora"| AWS
+
+    style SERVIDOR fill:#f8d7da,stroke:#c0392b,stroke-width:2px,color:#000
+    style EC2 fill:#d4edda,stroke:#27ae60,stroke-width:2px,color:#000
+    style S3 fill:#d4edda,stroke:#27ae60,stroke-width:2px,color:#000
+    style IAM fill:#fff3cd,stroke:#e6ac00,stroke-width:2px,color:#000
+    style BUDGET fill:#e2e3ff,stroke:#6c5ce7,stroke-width:2px,color:#000
+    style BACKUP fill:#e2e3ff,stroke:#6c5ce7,stroke-width:2px,color:#000
+    style AWS fill:#f0f9f4,stroke:#27ae60,stroke-width:1px
+    style GOV fill:#f5f4ff,stroke:#6c5ce7,stroke-width:1px
+    style VPC fill:#ffffff,stroke:#27ae60,stroke-width:1px,stroke-dasharray: 5 5
